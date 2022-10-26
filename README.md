@@ -20,11 +20,12 @@ def the_beatles_band(favourite_beatle: str, *args):
         print(f'This is another Beatle: {another_beatle}')
 
 the_beatles_band('George Harrison', 'Paul McCartney', 'Ringo Starr', 'John Lennon')
-
-> This is my favourite Beatle: George Harrison
-> This is another Beatle: Paul McCartney
-> This is another Beatle: Ringo Starr
-> This is another Beatle: John Lennon
+```
+```
+>>> This is my favourite Beatle: George Harrison
+>>> This is another Beatle: Paul McCartney
+>>> This is another Beatle: Ringo Starr
+>>> This is another Beatle: John Lennon
 ```
 ### Uso de `**kwargs`
 A diferencia de `*args`, `**kwargs` también permite pasar una cantidad arbitraria de argumentos a una función, pero asociado esta vez a una llave, lo que permite poder referenciarlo directamente.
@@ -43,7 +44,8 @@ get_hero_superpower(
         'superpower': 'Money'
     }
 )
-
+```
+```
 > name: Batman
 > age: 26
 > city: Gotham City
