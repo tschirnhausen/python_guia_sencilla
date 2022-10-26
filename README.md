@@ -13,7 +13,7 @@ Para esta guía estoy utilizando python3. Específicamente la versión Python 3.
 
 ### Uso de `*args`
 `*args` permite pasar una cantidad arbitraria de argumentos a una función, y disponer de ellos sin un nombre en específico. El acceso a este valor se trata como si fuera una lista.
-```
+```python
 def the_beatles_band(favourite_beatle: str, *args):
     print(f'This is my favourite Beatle: {favourite_beatle}')
     for another_beatle in args:
@@ -28,7 +28,7 @@ the_beatles_band('George Harrison', 'Paul McCartney', 'Ringo Starr', 'John Lenno
 ```
 ### Uso de `**kwargs`
 A diferencia de `*args`, `**kwargs` también permite pasar una cantidad arbitraria de argumentos a una función, pero asociado esta vez a una llave, lo que permite poder referenciarlo directamente.
-```
+```python
 def get_hero_superpower(**kwargs) -> str:
     for key, value in kwargs.items():
         print(f'{key}: {value}')
